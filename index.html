@@ -9,9 +9,9 @@
 <body>
 
 <div id="app">
-    <header>
-        <h1>{{ message }}</h1>
-    </header>
+    <todo-header v-bind:propsdata="message"></todo-header>
+    <console-btn v-on:show-log="printText"></console-btn>
+    <alert-btn v-on:show-alert="alertText"></alert-btn> 
     <todo-list></todo-list>
     <todo-footer></todo-footer>
         
