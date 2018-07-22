@@ -1,6 +1,4 @@
 // todo-footer 컴포넌트 전역 등록 
-
-
 Vue.component('todo-footer',{
     template : '<footer> Footer Area </footer>'
 })
@@ -15,4 +13,4 @@ var app = new Vue({
     components: {
         'todo-list' : todoList
     }
-});
+})
