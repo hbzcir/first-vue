@@ -242,9 +242,9 @@
 
 			//hide route information
 			$('#Paths line', el).attr('stroke-opacity', 0);
-			console.log($('#Paths line', el)+','+el.get()+','+el)
+			console.log($('#Paths line', el)+','+el.get().get()+','+el)
 			$('#Paths .cls-8', el).attr('stroke-opacity', 0);
-			console.log($('#Paths .cls-8', el)+','+el.get()+','+el)
+			console.log($('#Paths line', el)+','+el.get().get()+','+el)
 			$('#Doors line', el).attr('stroke-opacity', 0);
 			$('#Portals line', el).attr('stroke-opacity', 0);
 
