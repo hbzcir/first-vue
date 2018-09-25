@@ -48,8 +48,6 @@
 					<option value="R201">201</option>
 					<option value="R202">202</option>
 				</select>
-				<label for="accessible">Accessible</label>
-				<input id="accessible" type="checkbox" name="accessible" value="Accessible" />
 			</div>
 		</div>
 		
@@ -63,8 +61,7 @@
 				'use strict';
 				$('#myMaps').wayfinding({
 					'maps': [
-						{'path': 'test/fixtures/demo_map_1.svg', 'id': 'floor1'},
-						{'path': 'test/fixtures/demo_map_2.svg', 'id': 'floor2'}
+						{'path': 'test/fixtures/demo_map_1.svg', 'id': 'floor1'}
 					],
 					'path': {
 						width: 3,
@@ -97,17 +94,7 @@
 					$('#myMaps').wayfinding('routeTo', $(this).val());
 				});
 
-				$('#controls #accessible').change(function () {
-					if ($('#accessible:checked').val() !== undefined) {
-						$('#myMaps').wayfinding('accessibleRoute', true);
-					} else {
-						$('#myMaps').wayfinding('accessibleRoute', false);
-					}
-					if ($('#endSelect').val() !== '') {
-						$('#myMaps').wayfinding('routeTo', $('#endSelect').val());
-					}
-				});
-
+			
 				$('#myMaps').on('wayfinding:roomClicked', function(e, r) {
 					$('#endSelect option[value="' + r.roomId + '"]').attr('selected', true);
 				});
