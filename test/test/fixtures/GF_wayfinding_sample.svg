@@ -516,7 +516,7 @@
     </g>
 
     <g id="Doors">
-        <line id="magf_101-2" data-name="magf_101" class="cls-7" x1="243" y1="319" x2="252" y2="310"/>
+        <line id="R101" data-name="magf_101" class="cls-7" x1="243" y1="319" x2="252" y2="310"/>
         <line id="magf_102-2" data-name="magf_102" class="cls-7" x1="356" y1="289" x2="365" y2="280"/>
         <line id="magf_103-2" data-name="magf_103" class="cls-7" x1="447" y1="285.5" x2="456" y2="276.5"/>
         <line id="magf_104-2" data-name="magf_104" class="cls-7" x1="564" y1="225" x2="573" y2="216"/>
