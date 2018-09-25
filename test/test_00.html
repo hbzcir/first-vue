@@ -14,7 +14,7 @@
         <style>
             #content {width:1920px; height:1080px; outline:1px solid red}
             #myMaps {width:1400px; height:730px; outline:1px solid red}
-            #myMaps div {width:1400px; height:730px;}
+            #myMaps div {width:1400px; height:730px; }
         </style>
 
 	</head>
@@ -27,32 +27,14 @@
 				<button id="floor1">1st Floor</button>
 				<label for="beginSelect">Begin Route at</label>
 				<select id="beginSelect">
-					<option value="lcd.1">Reception</option>
 					<option value="lobby">Lobby</option>
 					<option value="R123">Conf Room</option>
 				</select>
 				<label for="endSelect">Show Route to</label>
 				<select id="endSelect">
 					<option></option>
-					<option disabled="true">West 1st</option>
+					<option disabled="true">st</option>
 					<option value="R101">101</option>
-					<option value="R102">102</option>
-					<option value="R103">103</option>
-					<option value="R104">104</option>
-					<option disabled="true">East 1st</option>
-					<option value="R111">111</option>
-					<option value="R112">112</option>
-					<option value="R113">113</option>
-					<option value="R114">114</option>
-					<option disabled="true">North 1st</option>
-					<option value="R121">121</option>
-					<option value="R122">122</option>
-					<option value="R123">123</option>
-					<option value="R124">124</option>
-					<option value="R125">125</option>
-					<option disabled="true">2nd</option>
-					<option value="R201">201</option>
-					<option value="R202">202</option>
 				</select>
 			</div>
 		</div>
@@ -76,7 +58,7 @@
 						speed: 8
 					},
 					'startpoint': function () {
-						return 'lcd.1';
+						return 'lobby';
 					},
 					'defaultMap': 'floor1',
 					'showLocation': true
