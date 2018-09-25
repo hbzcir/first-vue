@@ -241,7 +241,10 @@
 			$(el).hide();
 
 			//hide route information
+			$('#Paths line', el).attr('stroke-opacity', 0);
+			console.log($('#Paths line', el)+','+el.get()+','+el)
 			$('#Paths .cls-8', el).attr('stroke-opacity', 0);
+			console.log($('#Paths .cls-8', el)+','+el.get()+','+el)
 			$('#Doors line', el).attr('stroke-opacity', 0);
 			$('#Portals line', el).attr('stroke-opacity', 0);
 
@@ -282,7 +285,7 @@
 
 			dataStore.paths[mapNum] = [];
 
-			$('#' + floor.id + ' #Paths .cls-8', el).each(function () { // index, line
+			$('#' + floor.id + ' #Paths line', el).each(function () { // index, line
 
 				path = {};
 				path.floor = floor.id; // floor_1
