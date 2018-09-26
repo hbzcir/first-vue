@@ -108,6 +108,7 @@ aside {
 }
 
 .setting_area .seaerch_btn, .setting_area .lang {
+    width: 100%;
     margin-bottom:1.125rem;
 }
 
