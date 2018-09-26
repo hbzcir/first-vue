@@ -249,7 +249,7 @@
 			//Rooms
 
 			// clean up after illustrator -> svg issues
-			$('#Rooms a, #Doors line',el).each(function () {
+			$('#Rooms a, #Doors line','#Paths .cls-8', el).each(function () {
 				if ($(this).prop('id') && $(this).prop('id').indexOf('_') > 0) {
 					
 					var oldID = $(this).prop('id');
