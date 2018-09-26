@@ -284,33 +284,10 @@
         <line id="R108_1_" data-name="dr_108" class="cls-7" x1="716" y1="317" x2="725" y2="308"/>
         <line id="R109_1_" data-name="dr_109" class="cls-7" x1="810" y1="296" x2="819" y2="287"/>
         <line id="R110_1_" data-name="dr_110" class="cls-7" x1="843" y1="207" x2="852" y2="198"/>
-        <!-- <line id="R111_1_" data-name="dr_111" class="cls-7" x1="936.5" y1="293" x2="945.5" y2="284"/>
-        <line id="R112_1_" data-name="dr_112" class="cls-7" x1="1055.5" y1="291" x2="1064.5" y2="282"/>
-        <line id="R113_1_" data-name="dr_113" class="cls-7" x1="1149.5" y1="245" x2="1158.5" y2="236"/>
-        <line id="R114_1_" data-name="dr_114" class="cls-7" x1="1206.5" y1="234" x2="1215.5" y2="225"/>
-        <line id="R115_1_" data-name="dr_115" class="cls-7" x1="1302.5" y1="223" x2="1311.5" y2="214"/>
-        <line id="R116_1_" data-name="dr_116" class="cls-7" x1="1277.5" y1="248" x2="1286.5" y2="239"/>
-        <line id="R117_1_" data-name="dr_117" class="cls-7" x1="1197.5" y1="289" x2="1206.5" y2="280"/>
-        <line id="R118_1_" data-name="dr_118" class="cls-7" x1="1103.5" y1="476" x2="1112.5" y2="467"/> -->
-        <!-- <line id="magf_119-2" data-name="magf_119" class="cls-7" x1="1073.5" y1="379.5" x2="1082.5" y2="370.5"/> -->
-        <!-- <line id="R123" data-name="dr_123" class="cls-7" x1="1199.5" y1="476" x2="1208.5" y2="467"/>
-        <line id="R121" data-name="dr_121" class="cls-7" x1="1006.5" y1="492.5" x2="1015.5" y2="483.5"/>
-        <line id="R122" data-name="dr_122" class="cls-7" x1="1007.5" y1="540.5" x2="1016.5" y2="531.5"/>
-        <line id="R120" data-name="dr_120" class="cls-7" x1="995.5" y1="438.5" x2="1004.5" y2="429.5"/>
-        <line id="R1233" data-name="dr_1233" class="cls-7" x1="893.5" y1="460.5" x2="902.5" y2="451.5"/>
-        <line id="R124" data-name="dr_124" class="cls-7" x1="842.5" y1="544.5" x2="851.5" y2="535.5"/>
-        <line id="R125" data-name="dr_125" class="cls-7" x1="775.5" y1="453.5" x2="784.5" y2="444.5"/>
-        <line id="R126" data-name="dr_126" class="cls-7" x1="652.5" y1="428.5" x2="661.5" y2="419.5"/>
-        <line id="R127" data-name="dr_127" class="cls-7" x1="564" y1="492.5" x2="573" y2="483.5"/>
-        <line id="R131" data-name="dr_131" class="cls-7" x1="446" y1="415.5" x2="455" y2="406.5"/>
-        <line id="R130" data-name="dr_130" class="cls-7" x1="356.5" y1="408.5" x2="365.5" y2="399.5"/>
-        <line id="R128" data-name="dr_128" class="cls-7" x1="353.5" y1="337.5" x2="362.5" y2="328.5"/>
-        <line id="R129" data-name="dr_129" class="cls-7" x1="432.5" y1="335.5" x2="441.5" y2="326.5"/>
-        <line id="R132" data-name="dr_132" class="cls-7" x1="542.5" y1="379.5" x2="551.5" y2="370.5"/> -->
     </g>
 
     <g id="Paths">
-        <line class="cls-8" x1="573" y1="196" x2="573" y2="216"/>
+    <line class="cls-8" x1="573" y1="196" x2="573" y2="216"/>
 	<line class="cls-8" x1="545" y1="196" x2="573" y2="196"/>
 	<line class="cls-8" x1="524" y1="207" x2="545" y2="196"/>
 	<line class="cls-8" x1="512" y1="233" x2="524" y2="207"/>
