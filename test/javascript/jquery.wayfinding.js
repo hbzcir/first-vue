@@ -242,21 +242,23 @@
 
 			//hide route information
 			$('#Paths line', el).attr('stroke-opacity', 0);
-			console.log($('#Paths line', el)+','+el.get()+','+el)
 			$('#Paths .cls-8', el).attr('stroke-opacity', 0);
-			console.log($('#Paths line', el)+','+el.get()+','+el)
 			$('#Doors line', el).attr('stroke-opacity', 0);
 			$('#Portals line', el).attr('stroke-opacity', 0);
 
 			//Rooms
 
 			// clean up after illustrator -> svg issues
-			$('#Rooms a, #Doors line', el).each(function () {
+			$('#Rooms a, #Doors line',el).each(function () {
 				if ($(this).prop('id') && $(this).prop('id').indexOf('_') > 0) {
+					
 					var oldID = $(this).prop('id');
+					console.log($(this).prop('id'))
 					$(this).prop('id', oldID.slice(0, oldID.indexOf('_')));
+					console.log(oldID.slice(0, oldID.indexOf('_')))
 				}
 			});
+			
 
 			//The following need to use the el variable to scope their calls: el is jquery element
 
@@ -284,6 +286,8 @@
 			//Paths
 
 			dataStore.paths[mapNum] = [];
+
+			console.log(dataStore.paths[mapNum])
 
 			$('#' + floor.id + ' #Paths line', el).each(function () { // index, line
 
