@@ -241,10 +241,11 @@
 			$(el).hide();
 
 			//hide route information
-			$('#Paths line', el).attr('stroke-opacity', 0);
-			$('#Paths .cls-8', el).attr('stroke-opacity', 0);
-			$('#Doors line', el).attr('stroke-opacity', 0);
-			$('#Portals line', el).attr('stroke-opacity', 0);
+			//ey
+			// $('#Paths line', el).attr('stroke-opacity', 0);
+			// $('#Paths .cls-8', el).attr('stroke-opacity', 0);
+			// $('#Doors line', el).attr('stroke-opacity', 0);
+			// $('#Portals line', el).attr('stroke-opacity', 0);
 
 			//Rooms
 
