@@ -10,17 +10,17 @@ body {
 }
 
 #myMaps {
-	height: 480px;
-	width: 100%px;
+	/* height: 480px; */
+	width: 1400px;
 }
 #myMaps div {
-	height: 480px;
+	/* height: 480px; */
 	margin: auto auto;
-	width: 600px;
+	width: 1400px;
 }
 #controls {
-	background-color: lightGrey;
-	height: 50px;
+	background-color: #fff;
+	height: 70px;
 	width: 100%;
 	z-index:-1;
 }
