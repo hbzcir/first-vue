@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>JEJU SHINHQA WORLD</title>
+    <meta name="description" content="제주신화월드">
+    <link rel="stylesheet" href="styles/reset.css">
+    <link rel="stylesheet" href="styles/common.css">
+    <link rel="stylesheet" href="styles/example.css">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+</head>
+<body>
+<!-- wrap -->
+    <div class="wrap" id="wrap">
+    <!-- header -->
+    <header class="header" id="header">
+        <h1><a href="#"><img src="images/logo.png" alt="JEJU SHINHQA WORLD"></a></h1>
+        <div class="location_state">
+            <p class="state_info current">현재위치</p>
+            <p class="state_info building">메리어트 리조트관</p>
+            <p class="state_info detail"><span class="floor">G층</span> <span class="street">쇼핑스트리트</span> 앞</p>
+        </div>
+    </header>
+    <!--// header -->
+    <!-- nav -->
+    <nav>
+        <ul class="nav_list dpeth_01" id="navList">
+            <li class="active">
+                <p class="nav_list_tit"><a href="#">지도검색</a></p>
+                <ul class="dpeth_02">
+                    <li><a href="#">01</a></li>
+                    <li><a href="#">02</a></li>
+                    <li><a href="#">03</a></li>
+                    <li><a href="#">04</a></li>
+                    <li><a href="#">05</a></li>
+                </ul>
+            </li>
+            <li>
+                <p class="nav_list_tit"><a href="#">호텔 & 리조트</a></p>
+                <ul class="dpeth_02">
+                    <li><a href="#">01</a></li>
+                    <li><a href="#">02</a></li>
+                    <li><a href="#">03</a></li>
+                    <li><a href="#">04</a></li>
+                    <li><a href="#">05</a></li>
+                </ul>
+            </li>
+            <li>
+                <p class="nav_list_tit"><a href="#">즐길거리</a></p>
+                <ul class="dpeth_02">
+                    <li><a href="#">01</a></li>
+                    <li><a href="#">02</a></li>
+                    <li><a href="#">03</a></li>
+                    <li><a href="#">04</a></li>
+                    <li><a href="#">05</a></li>
+                </ul>
+            </li>
+            <li>
+                <p class="nav_list_tit"><a href="#">레스토랑 & 바</a></p>
+                <ul class="dpeth_02">
+                    <li><a href="#">01</a></li>
+                    <li><a href="#">02</a></li>
+                    <li><a href="#">03</a></li>
+                    <li><a href="#">04</a></li>
+                    <li><a href="#">05</a></li>
+                </ul>
+            </li>
+            <li>
+                <p class="nav_list_tit"><a href="#">쇼핑</a></p>
+                <ul class="dpeth_02">
+                    <li><a href="#">01</a></li>
+                    <li><a href="#">02</a></li>
+                    <li><a href="#">03</a></li>
+                    <li><a href="#">04</a></li>
+                    <li><a href="#">05</a></li>
+                </ul>
+            </li>
+            <li>
+                <p class="nav_list_tit"><a href="#">카지노</a></p>
+                <ul class="dpeth_02">
+                    <li><a href="#">01</a></li>
+                    <li><a href="#">02</a></li>
+                    <li><a href="#">03</a></li>
+                    <li><a href="#">04</a></li>
+                    <li><a href="#">05</a></li>
+                </ul>
+            </li>   
+        </ul>
+    </nav>
+    <!--// nav  -->
+    <!-- section 지도영역 -->
+    <section class="contents">
+        <div id="content">
+                <div id="myMaps">
+                </div>
+                <div id="controls">
+                    <label>Show</label>
+                    <button id="floor1">1st Floor</button>
+                    <label for="beginSelect">Begin Route at</label>
+                    <select id="beginSelect">
+                        <option value="lobby">Lobby</option>
+                        <option value="R123">Conf Room</option>
+                    </select>
+                    <label for="endSelect">Show Route to</label>
+                    <select id="endSelect">
+                        <option></option>
+                        <option disabled="true">st</option>
+                        <option value="R101">101</option>
+                    </select>
+                </div>
+            </div>
+    </section>
+    <!--// section 지도영역 -->
+    <!-- 검색, 언어선택 -->
+    <aside class="setting_area">
+        <button class="seaerch_btn">검색하기</button>
+        <div class="lang">
+            <a href="#">한글</a>
+            <a href="#">ENGLISH</a>
+            <a href="#">중국어</a>
+        </div>
+    </aside>
+    <!--// 검색, 언어선택 -->    
+    <!-- 현재시간 -->
+    <div class="time_area">
+        <time datetime="2018-12-25" class="date"><span>2011</span>년 <span>12</span>월 <span>25</span>일</time>
+        <time datetime="13:30">1시 30분</time>
+    </div>
+    <!--// 현재시간 -->
+    <!-- util JS -->
+    <div class="util_js">
+        <script src="javascript/scale.fix.js"></script>
+        <script src="javascript/jquery.min.js"></script>
+        <script src="javascript/jquery.wayfinding.js"></script>
+        <!-- local JS -->
+        <script>
+            $(document).ready(function () {
+				'use strict';
+				$('#myMaps').wayfinding({
+					'maps': [
+						{'path': 'test/fixtures/GF_wayfinding_sample.svg', 'id': 'floor1'}
+					],
+					'path': {
+						width: 3,
+						color: '#cccccc',
+						radius: 8,
+						speed: 8
+					},
+					'startpoint': function () {
+						return 'lobby';
+					},
+					'defaultMap': 'floor1',
+					'showLocation': true
+				}, function(){
+					console.log('callback reached');
+				});
+
+				//make the floor buttons clickable
+				$('#controls button').click(function () {
+					$('#myMaps').wayfinding('currentMap', $(this).prop('id'));
+				});
+
+				$('#controls #beginSelect').change(function () {
+					$('#myMaps').wayfinding('startpoint', $(this).val());
+					if ($('#endSelect').val() !== '') {
+						$('#myMaps').wayfinding('routeTo', $('#endSelect').val());
+					}
+				});
+
+				$('#controls #endSelect').change(function () {
+					$('#myMaps').wayfinding('routeTo', $(this).val());
+				});
+
+			
+				$('#myMaps').on('wayfinding:roomClicked', function(e, r) {
+					$('#endSelect option[value="' + r.roomId + '"]').attr('selected', true);
+				});
+
+			});
+        </script>
+    </div>
+</div>
+<!--// wrap -->    
+</body>
+</html>
