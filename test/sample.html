@@ -18,7 +18,7 @@
     <div class="wrap" id="wrap">
     <!-- header -->
     <header class="header" id="header">
-        <h1><a href="#"><img src="images/logo.png" alt="JEJU SHINHQA WORLD"></a></h1>
+        <h1><a href="#"><!--<img src="images/logo.png" alt="JEJU SHINHQA WORLD">--></a></h1>
         <div class="location_state">
             <p class="state_info current">현재위치</p>
             <p class="state_info building">메리어트 리조트관</p>
@@ -159,21 +159,25 @@
 
 				//make the floor buttons clickable
 				$('#controls button').click(function () {
-					$('#myMaps').wayfinding('currentMap', $(this).prop('id'));
 					console.log($(this).prop('id'))
+					$('#myMaps').wayfinding('currentMap', $(this).prop('id'));
+					
 				});
 
 				$('#controls #beginSelect').change(function () {
+					console.log($(this).val())
 					$('#myMaps').wayfinding('startpoint', $(this).val());
 					if ($('#endSelect').val() !== '') {
-						$('#myMaps').wayfinding('routeTo', $('#endSelect').val());
 						console.log($('#endSelect').val())
+						$('#myMaps').wayfinding('routeTo', $('#endSelect').val());
+						
 					}
 				});
 
 				$('#controls #endSelect').change(function () {
-					$('#myMaps').wayfinding('routeTo', $(this).val());
 					console.log($(this).val())
+					$('#myMaps').wayfinding('routeTo', $(this).val());
+					
 				});
 
 			
