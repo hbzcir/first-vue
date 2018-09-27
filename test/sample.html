@@ -107,8 +107,6 @@
                     </select>
                     <label for="endSelect">Show Route to</label>
                     <select id="endSelect">
-                        <option></option>
-                        <option disabled="true">st</option>
                         <option value="R101">101</option>
                     </select>
                 </div>
@@ -162,17 +160,20 @@
 				//make the floor buttons clickable
 				$('#controls button').click(function () {
 					$('#myMaps').wayfinding('currentMap', $(this).prop('id'));
+					console.log($(this).prop('id'))
 				});
 
 				$('#controls #beginSelect').change(function () {
 					$('#myMaps').wayfinding('startpoint', $(this).val());
 					if ($('#endSelect').val() !== '') {
 						$('#myMaps').wayfinding('routeTo', $('#endSelect').val());
+						console.log($('#endSelect').val())
 					}
 				});
 
 				$('#controls #endSelect').change(function () {
 					$('#myMaps').wayfinding('routeTo', $(this).val());
+					console.log($(this).val())
 				});
 
 			
