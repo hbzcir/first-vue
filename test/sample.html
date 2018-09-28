@@ -93,22 +93,30 @@
     </nav>
     <!--// nav  -->
     <!-- section 지도영역 -->
-    <section class="contents">
+        <section class="contents">
         <div id="content">
                 <div id="myMaps">
                 </div>
                 <div id="controls">
                     <label>Show</label>
                     <button id="floor1">1st Floor</button>
+                    <button id="floor2">2st Floor</button>
                     <label for="beginSelect">Begin Route at</label>
                     <select id="beginSelect">
                         <option value="lobby">Lobby</option>
-                    </select>
-                    <label for="endSelect">101</label>
-                    <select id="endSelect">
                         <option value="R101">101</option>
+                        <option value="R101">102</option>
+                        <option value="R101">103</option>
                     </select>
-			 <label for="accessible">Accessible</label>
+                    <label for="endSelect">Show Route to</label>
+                    <select id="endSelect">
+                        <option></option>
+                        <option disabled="true">st</option>
+                        <option value="R101">101</option>
+                        <option value="R102">102</option>
+                        <option value="R103">103</option>
+                    </select>
+                    <label for="accessible">Accessible</label>
                     <input id="accessible" type="checkbox" name="accessible" value="Accessible">
                 </div>
             </div>
