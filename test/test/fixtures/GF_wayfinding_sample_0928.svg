@@ -65,6 +65,10 @@
 		</g>
 	</g>
 </g>
+<g id="Portals">
+	<line id="Elev.1.floor2" fill="#E6E6E6" stroke="#FF00FF" x1="297" y1="237" x2="315" y2="255"/>
+	<line id="Stair.1.floor2" fill="#E6E6E6" stroke="#FF00FF" x1="297" y1="273" x2="288" y2="273"/>
+</g>
 <g id="Rooms">
     <a id="lobby_1" xlink:href="#">
 		<g>
