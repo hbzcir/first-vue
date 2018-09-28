@@ -722,6 +722,7 @@
 					break;
 				}
 			}
+			console.log(step)
 		}
 
 		function hidePath(obj) {
@@ -970,9 +971,8 @@
 					draw = {};
 
 					console.log('1'+ dataStore)
-					console.log('2'+ dataStore.paths[solution[0].floor][solution[0].segment].doorA[0])
-					console.log('3'+ dataStore.paths[solution[0].floor])
-					console.log('4'+ startpoint)
+					console.log('2'+ dataStore.paths[solution[0].floor])
+					console.log('3'+ startpoint)
 
 					
 
