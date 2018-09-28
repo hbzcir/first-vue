@@ -265,7 +265,12 @@
 			// make clickable
 			// removed el scope from this next call.
 			$('#Rooms a', el).click(function (event) {
+				 console.log($('#Rooms a', el));
+				console.log($('#Rooms a'));
+				console.log(event);
+				console.log($(target));
 				$(target).wayfinding('routeTo', $(this).prop('id'));
+				console.log($(this).prop('id'));
 				event.preventDefault();
 			});
 		} //function cleanupSVG
@@ -1246,7 +1251,7 @@
 
 			getOptions(obj); // load the current options
 
-//          console.log("options loaded: ", action, passed, options);
+          console.log("options loaded: ", action, passed, options);
 
 			//handle actions
 			if (action && typeof (action) === 'string') {
