@@ -244,7 +244,7 @@
 			//tnwjd
 			$('#Paths line', el).attr('stroke-opacity', 0);
 			$('#Doors line', el).attr('stroke-opacity', 0);
-			$('#Portals line', el).attr('stroke-opacity', 0);
+			//$('#Portals line', el).attr('stroke-opacity', 0);
 
 			//Rooms
 
@@ -265,12 +265,7 @@
 			// make clickable
 			// removed el scope from this next call.
 			$('#Rooms a', el).click(function (event) {
-				 console.log($('#Rooms a', el));
-				console.log($('#Rooms a'));
-				console.log(event);
-				console.log($(target));
 				$(target).wayfinding('routeTo', $(this).prop('id'));
-				console.log($(this).prop('id'));
 				event.preventDefault();
 			});
 		} //function cleanupSVG
@@ -974,6 +969,13 @@
 
 					draw = {};
 
+					console.log('1'+ dataStore)
+					console.log('2'+ dataStore.paths[solution[0].floor][solution[0].segment].doorA[0])
+					console.log('3'+ dataStore.paths[solution[0].floor])
+					console.log('4'+ startpoint)
+
+					
+
 					//if statement incorrectly assumes one door at the end of the path, works in that case, need to generalize
 					if (dataStore.paths[solution[0].floor][solution[0].segment].doorA[0] === startpoint) {
 						draw = {};
@@ -1251,7 +1253,7 @@
 
 			getOptions(obj); // load the current options
 
-          console.log("options loaded: ", action, passed, options);
+//          console.log("options loaded: ", action, passed, options);
 
 			//handle actions
 			if (action && typeof (action) === 'string') {
