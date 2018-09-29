@@ -94,32 +94,44 @@
     <!--// nav  -->
     <!-- section 지도영역 -->
         <section class="contents">
-        <div id="content">
-                <div id="myMaps">
-                </div>
-                <div id="controls">
-                    <label>Show</label>
-                    <button id="floor1">1st Floor</button>
-                    <button id="floor2">2st Floor</button>
-                    <label for="beginSelect">Begin Route at</label>
-                    <select id="beginSelect">
-                        <option value="lobby">Lobby</option>
-                        <option value="R101">101</option>
-                        <option value="R101">102</option>
-                        <option value="R101">103</option>
-                    </select>
-                    <label for="endSelect">Show Route to</label>
-                    <select id="endSelect">
-                        <option></option>
-                        <option disabled="true">st</option>
-                        <option value="R101">101</option>
-                        <option value="R102">102</option>
-                        <option value="R103">103</option>
-                    </select>
-                    <label for="accessible">Accessible</label>
-                    <input id="accessible" type="checkbox" name="accessible" value="Accessible">
-                </div>
-            </div>
+       <div id="content">
+			<div id="myMaps">
+			</div>
+			<div id="controls">
+				<label>Show</label>
+				<button id="floor1">1st Floor</button>
+				<button id="floor2">2nd Floor</button>
+				<label for="beginSelect">Begin Route at</label>
+				<select id="beginSelect">
+					<option value="lcd.1">Reception</option>
+					<option value="lobby">Lobby</option>
+					<option value="R123">Conf Room</option>
+				</select>
+				<label for="endSelect">Show Route to</label>
+				<select id="endSelect">
+					<option></option>
+					<option disabled="true">West 1st</option>
+					<option value="R101">101</option>
+					<option value="R102">102</option>
+					<option value="R103">103</option>
+					<option value="R104">104</option>
+					<option disabled="true">East 1st</option>
+					<option value="R111">111</option>
+					<option value="R112">112</option>
+					<option value="R113">113</option>
+					<option value="R114">114</option>
+					<option disabled="true">North 1st</option>
+					<option value="R121">121</option>
+					<option value="R122">122</option>
+					<option value="R123">123</option>
+					<option value="R124">124</option>
+					<option value="R125">125</option>
+					<option disabled="true">2nd</option>
+					<option value="R201">201</option>
+					<option value="R202">202</option>
+				</select>
+			</div>
+		</div>
     </section>
     <!--// section 지도영역 -->
     <!-- 검색, 언어선택 -->
@@ -139,7 +151,6 @@
     </div>
     <!--// 현재시간 -->
     <!-- util JS -->
-    <div class="util_js">
         <script src="javascript/scale.fix.js"></script>
         <script src="javascript/jquery.min.js"></script>
         <script src="javascript/jquery.wayfinding.js"></script>
@@ -149,7 +160,7 @@
 				'use strict';
 				$('#myMaps').wayfinding({
 					'maps': [
-						{'path': 'test/fixtures/GF_wayfinding_sample_0928.svg', 'id': 'floor1'}
+						{'path': 'test/fixtures/demo_map_1.svg', 'id': 'floor1'}
 					],
 					'path': {
 						width: 3,
@@ -158,7 +169,7 @@
 						speed: 8
 					},
 					'startpoint': function () {
-						return 'lobby';
+						return 'lcd.1';
 					},
 					'defaultMap': 'floor1',
 					'showLocation': true
@@ -196,7 +207,7 @@
 
 			});
         </script>
-    </div>
+
 </div>
 <!--// wrap -->    
 </body>
