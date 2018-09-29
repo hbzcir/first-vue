@@ -167,12 +167,10 @@
 		</g>
 	</a>
 </g>
-<g id="Portals">
-	<line id="Elev.1.floor2" fill="none" stroke="#FF00FF" x1="297" y1="237" x2="315" y2="255"/>
-	<line id="Stair.1.floor2" fill="none" stroke="#FF00FF" x1="297" y1="273" x2="288" y2="273"/>
-</g>
+
 <g id="Doors">
 	<line id="lobby" fill="none" stroke="#00FF00" x1="297" y1="408" x2="306" y2="417"/>
+	<line id="R100_0_" fill="#A5855B" class="st9" x1="243" y1="319" x2="252" y2="310"/>
 	<line id="R121_1_" fill="none" stroke="#00FF00" x1="117" y1="156" x2="126" y2="165"/>
 	<line id="R122_1_" fill="none" stroke="#00FF00" x1="207" y1="120" x2="198" y2="129"/>
 	<line id="R123_4_" fill="none" stroke="#00FF00" x1="270" y1="120" x2="279" y2="129"/>
