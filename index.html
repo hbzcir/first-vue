@@ -9,11 +9,31 @@
 <body>
 
 <div id="app">
-    <todo-header v-bind:propsdata="message"></todo-header>
-    <console-btn v-on:show-log="printText"></console-btn>
-    <alert-btn v-on:show-alert="alertText"></alert-btn> 
-    <todo-list></todo-list>
-    <todo-footer></todo-footer>
+    
+    <todo-header v-bind:propsdata="message"></todo-header><!-- 전역 -->
+    <console-btn v-on:show-log="printText"></console-btn><!--지역-->
+    <alert-btn v-on:show-alert="alertText"></alert-btn> <!--지역-->
+    <todo-list></todo-list><!--지역-->
+    <todo-footer></todo-footer><!-- 전역 -->
+
+    <ul>
+        <li> 로컬파일로 index.html에 vue.js 테스트할땐 오류가 안났는데 app.js로 분리해서 깃에 올리니까 app.js 에러가 났다 vue.js정의 못한다고. 그래서 야무쌤꺼 " function (global, Vue) "요거 썼더니 에러가 안나가지고.. 왜 때문에? </li>
+        <li> Page Layout -> .content template 컴포넌트안으로 애들 옮겨야댕 </li>
+        <li> Book 67p 상단 <blockquote>인스턴스에 새로운 컴포넌트를 등록하면 기존에 있는 컴포넌트는 상위 컴포넌트(부모)가 되고. 새로 등록된 컴포넌트 !!는 하위 컴포넌트가 된다. ?? 새로 등록된??? 뭔소리야</blockquote></li>
+        <li> 와우하고 세련된 SPA 디렉토리 구조, 참고 될만한 SPA (디렉토리,컴포넌트 나누는 방법이나 샘플) _ lib, assets ??  </li>
+        <li> Sass 해야뎅</li>
+        <li> Sass 기존에 있는 CSS ㅠㅠ Sass로 변경 해야뎅 ㅠ ㅠ 요기서 뭘쓰는게 좋을까..? 보다는 어떤식으로 가져다쓸 라이브러리를 선택 하는게 좋으까?
+            <a href="https://www.hongkiat.com/blog/mixin-library-for-sass/">참고 mixin</a>
+            트렌디하구 시프당 ㅠ 
+        </li>
+
+        
+        <li>grid layout SPA WEB 구현시 문제는?해결방법은? ie9 까지 맞춰야 한다면 WEB Vue.js 로 구현했을때 문제 없을까??? IE10이상이면 괜츈한가 ? 그럼 하이브리드 모바일 웹의 경우는???? </li>
+
+        
+    </ul>
+
+    <p>gtid auto flow 얜 안되; </p>
         
 </div>
 <script src="js/vue.js"></script>
